@@ -1,7 +1,8 @@
 ﻿#pragma once
 
+#ifdef _WINDOWS
 #include "base/platform/win.h"
-
+#endif
 
 namespace Base
 {
@@ -25,7 +26,7 @@ namespace Base
 		void	Finalize();
 
 	public:
-#ifdef WIN32
+#ifdef _WINDOWS
 		Platform::Win	win;
 #endif
 

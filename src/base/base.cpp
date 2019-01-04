@@ -31,7 +31,7 @@ namespace Base
 	// 初期化
 	bool Main::Initialize()
 	{
-#ifdef WIN32
+#ifdef _WINDOWS
 		// Window生成
 		if (win.CreateInstance(name_))
 		{

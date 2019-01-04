@@ -5,7 +5,7 @@
 #include "base/base.h"
 
 
-#ifdef WIN32
+#ifdef _WINDOWS
 
 // Windowsのメイン関数
 int APIENTRY WinMain(_In_ HINSTANCE hInstance,
@@ -25,7 +25,7 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance,
 #else
 
 // メイン関数
-int	main(int argc const char* argv[])
+int	main(int argc, const char* argv[])
 {
 	Base::Main main(Main::APP_TITLE_NAME);
 	return main.Run();
