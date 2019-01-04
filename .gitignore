@@ -1,0 +1,9 @@
+# フォルダ除外
+**/Debug
+**/Release
+**/.vs
+
+# 拡張子除外
+*.user
+*.aps
+*.Cache
