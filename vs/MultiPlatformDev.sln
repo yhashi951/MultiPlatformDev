@@ -3,40 +3,69 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPlatformDev", "MultiPlatformDev/MultiPlatformDev.vcxproj", "{C3FADBCD-E1B9-4229-8507-C598D7D91649}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPlatformDevWin", "MultiPlatformDev\MultiPlatformDevWin.vcxproj", "{C3FADBCD-E1B9-4229-8507-C598D7D91649}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98} = {BCAB0E2B-9387-4B49-B0EC-085566BFDE98}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Base", "Base\Base.vcxproj", "{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseWin", "Base\BaseWin.vcxproj", "{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPlatformDevShare", "MultiPlatformDev\MultiPlatformDevShare.vcxitems", "{0C467BAC-CC12-4587-A3FE-6E1880A03705}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseShare", "Base\BaseShare.vcxitems", "{BBEE0899-CBF5-42EC-BDB7-4905B3AC88E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{FA669697-9F20-44D4-8655-3C1AC17622C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MultiPlatformDev", "MultiPlatformDev", "{D76E6302-7263-4FD1-9E1D-E5635AC2E1AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseLinux", "Base\BaseLinux.vcxproj", "{47EFAA53-C777-49D1-9D9C-D23082CBD3F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiPlatformDevLinux", "MultiPlatformDev\MultiPlatformDevLinux.vcxproj", "{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5} = {47EFAA53-C777-49D1-9D9C-D23082CBD3F5}
+	EndProjectSection
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MultiPlatformDev\MultiPlatformDevShare.vcxitems*{0c467bac-cc12-4587-a3fe-6e1880a03705}*SharedItemsImports = 9
+		Base\BaseShare.vcxitems*{47efaa53-c777-49d1-9d9c-d23082cbd3f5}*SharedItemsImports = 4
+		MultiPlatformDev\MultiPlatformDevShare.vcxitems*{4cdbcc29-5dde-4900-b5a0-fa0c3925de8c}*SharedItemsImports = 4
+		Base\BaseShare.vcxitems*{bbee0899-cbf5-42ec-bdb7-4905b3ac88e8}*SharedItemsImports = 9
+		Base\BaseShare.vcxitems*{bcab0e2b-9387-4b49-b0ec-085566bfde98}*SharedItemsImports = 4
+		MultiPlatformDev\MultiPlatformDevShare.vcxitems*{c3fadbcd-e1b9-4229-8507-c598d7d91649}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Debug|x64.ActiveCfg = Debug|x64
 		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Debug|x64.Build.0 = Debug|x64
-		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Debug|x86.ActiveCfg = Debug|Win32
-		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Debug|x86.Build.0 = Debug|Win32
 		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Release|x64.ActiveCfg = Release|x64
 		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Release|x64.Build.0 = Release|x64
-		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Release|x86.ActiveCfg = Release|Win32
-		{C3FADBCD-E1B9-4229-8507-C598D7D91649}.Release|x86.Build.0 = Release|Win32
 		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Debug|x64.ActiveCfg = Debug|x64
 		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Debug|x64.Build.0 = Debug|x64
-		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Debug|x86.ActiveCfg = Debug|Win32
-		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Debug|x86.Build.0 = Debug|Win32
 		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Release|x64.ActiveCfg = Release|x64
 		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Release|x64.Build.0 = Release|x64
-		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Release|x86.ActiveCfg = Release|Win32
-		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98}.Release|x86.Build.0 = Release|Win32
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5}.Debug|x64.ActiveCfg = Debug|x64
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5}.Debug|x64.Build.0 = Debug|x64
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5}.Release|x64.ActiveCfg = Release|x64
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5}.Release|x64.Build.0 = Release|x64
+		{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C}.Debug|x64.ActiveCfg = Debug|x64
+		{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C}.Debug|x64.Build.0 = Debug|x64
+		{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C}.Release|x64.ActiveCfg = Release|x64
+		{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3FADBCD-E1B9-4229-8507-C598D7D91649} = {D76E6302-7263-4FD1-9E1D-E5635AC2E1AF}
+		{BCAB0E2B-9387-4B49-B0EC-085566BFDE98} = {FA669697-9F20-44D4-8655-3C1AC17622C6}
+		{0C467BAC-CC12-4587-A3FE-6E1880A03705} = {D76E6302-7263-4FD1-9E1D-E5635AC2E1AF}
+		{BBEE0899-CBF5-42EC-BDB7-4905B3AC88E8} = {FA669697-9F20-44D4-8655-3C1AC17622C6}
+		{47EFAA53-C777-49D1-9D9C-D23082CBD3F5} = {FA669697-9F20-44D4-8655-3C1AC17622C6}
+		{4CDBCC29-5DDE-4900-B5A0-FA0C3925DE8C} = {D76E6302-7263-4FD1-9E1D-E5635AC2E1AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7221478A-F82D-4D4C-9DAE-EAD177BF5E05}

@@ -5,23 +5,21 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="src\platform">
-      <UniqueIdentifier>{2337e44f-65af-47c4-948d-ee9c3bc0d737}</UniqueIdentifier>
+    <Filter Include="resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\base\platform\win.h">
-      <Filter>src\platform</Filter>
+    <ClInclude Include="..\..\src\targetver.h">
+      <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\base\base.h">
+    <ClInclude Include="..\..\src\stdafx.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\base\platform\win.cpp">
-      <Filter>src\platform</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\base\base.cpp">
+    <ClCompile Include="..\..\src\stdafx.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
