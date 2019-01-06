@@ -5,7 +5,7 @@
 #include "base/base.h"
 
 
-#ifdef _WINDOWS
+#ifdef USE_WINDOWS
 
 // Windowsのメイン関数
 int APIENTRY WinMain(_In_ HINSTANCE hInstance,

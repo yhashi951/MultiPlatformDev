@@ -1,8 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="platform">
+    <Filter Include="src">
+      <UniqueIdentifier>{80065b43-6bc0-41c8-9fb5-4a3e6d0f72a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{265e19f5-c4be-4d8b-b28c-73a5b38222df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\platform">
       <UniqueIdentifier>{50f9795a-c7f8-404d-ab1f-2dbb95dc042e}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\base\platform\linux.cpp">
+      <Filter>src\base\platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\base\platform\linux.h">
+      <Filter>src\base\platform</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

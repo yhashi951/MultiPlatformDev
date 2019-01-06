@@ -1,7 +1,11 @@
 ﻿#pragma once
 
-#ifdef _WINDOWS
+#ifdef USE_WINDOWS
 #include "base/platform/win.h"
+#endif
+
+#ifdef USE_LINUX
+#include "platform/linux.h"
 #endif
 
 namespace Base
@@ -26,9 +30,12 @@ namespace Base
 		void	Finalize();
 
 	public:
-#ifdef _WINDOWS
+#ifdef USE_WINDOWS
 		Platform::Win	win;
 #endif
+#ifdef USE_LINUX
+		Platform::Linux	linux;
+#endif 
 
 	private:
 		const char*	name_ = nullptr;

@@ -9,5 +9,8 @@
     <ClInclude Include="..\..\src\base\base.h">
       <Filter>lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\base\platform\linux.h">
+      <Filter>lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

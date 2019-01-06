@@ -4,18 +4,21 @@
     <Filter Include="src">
       <UniqueIdentifier>{8744560e-558a-4892-8a7b-8192a777909c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\platform">
+    <Filter Include="src\base">
+      <UniqueIdentifier>{43c16b27-05e5-4cf7-8499-dae0b6ef927d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\platform">
       <UniqueIdentifier>{d47328e4-e2de-4e24-a698-5bdb3292c785}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\base\base.cpp">
-      <Filter>src</Filter>
+      <Filter>src\base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\src\base\base.h">
-      <Filter>src</Filter>
+      <Filter>src\base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

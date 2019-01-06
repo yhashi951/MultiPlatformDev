@@ -31,9 +31,16 @@ namespace Base
 	// 初期化
 	bool Main::Initialize()
 	{
-#ifdef _WINDOWS
+#ifdef USE_WINDOWS
 		// Window生成
 		if (win.CreateInstance(name_))
+		{
+			return true;
+		}
+#endif
+#ifdef USE_LINUX
+		// Linux生成
+		if (linux.CreateInstance(name_))
 		{
 			return true;
 		}
@@ -44,8 +51,11 @@ namespace Base
 	// ループ
 	bool Main::Loop()
 	{
-#ifdef WIN32
+#ifdef USE_WINDOWS
 		if (!win.Update()) { return false; }
+#endif
+#ifdef USE_LINUX
+		if (!linux.Update()) { return false; }
 #endif
 
 		return true;
@@ -54,8 +64,11 @@ namespace Base
 	// 後処理
 	void Main::Finalize()
 	{
-#ifdef WIN32
+#ifdef USE_WINDOWS
 		win.Release();
+#endif
+#ifdef USE_LINUX
+		linux.Release();
 #endif
 	}
 };	// Base
